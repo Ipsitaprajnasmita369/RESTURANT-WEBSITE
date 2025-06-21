@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reservation - Flavour Haven</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Book a Table</h1>
+  <form action="/reserve" method="POST">
+    <label for="name">Full Name:</label>
+    <input type="text" name="name" required>
+
+    <label for="date">Date:</label>
+    <input type="date" name="date" required>
+
+    <label for="time">Time:</label>
+    <input type="time" name="time" required>
+
+    <label for="guests">Guests:</label>
+    <input type="number" name="guests" min="1" max="20" required>
+
+    <button type="submit">Book Now</button>
+  </form>
+</body>
+</html>
